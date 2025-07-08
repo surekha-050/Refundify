@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Refund details">e2e96d1a83266e105d2db4b6feaad36f</catalog_item>
+        <catalog_variable>IO:0e4fadde83266e105d2db4b6feaad3b1</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 07:48:34</sys_created_on>
+        <sys_id>2688ce26832eae105d2db4b6feaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>account_number</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_2688ce26832eae105d2db4b6feaad322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 07:48:34</sys_updated_on>
+        <table/>
+        <ui_policy display_value="show account.no and IFSC code if Payment is bank transfer">73e70226832eae105d2db4b6feaad3c7</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>account_number</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=2688ce26832eae105d2db4b6feaad322"/>
+</record_update>

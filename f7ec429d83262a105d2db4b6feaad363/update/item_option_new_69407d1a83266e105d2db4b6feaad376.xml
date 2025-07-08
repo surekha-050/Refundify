@@ -38,7 +38,7 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
@@ -49,7 +49,7 @@
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Date</question_text>
+        <question_text>Date of Purchase</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-07 11:24:19</sys_created_on>
         <sys_id>69407d1a83266e105d2db4b6feaad376</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Date</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Date of Purchase</sys_name>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>item_option_new_69407d1a83266e105d2db4b6feaad376</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 06:47:39</sys_updated_on>
+        <sys_updated_on>2025-07-08 07:29:34</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
