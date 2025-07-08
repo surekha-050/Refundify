@@ -5,8 +5,8 @@
         <cat_item display_value="Refund details">e2e96d1a83266e105d2db4b6feaad36f</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field/>
-        <choice_table/>
+        <choice_field>payment_method</choice_field>
+        <choice_table>x_1771422_refund_0_order_details</choice_table>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -27,7 +27,7 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>false</include_none>
+        <include_none>true</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-07 12:57:00</sys_created_on>
         <sys_id>cf75825e83a66e105d2db4b6feaad395</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>payment method</sys_name>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>item_option_new_cf75825e83a66e105d2db4b6feaad395</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 06:47:39</sys_updated_on>
+        <sys_updated_on>2025-07-08 07:01:17</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
