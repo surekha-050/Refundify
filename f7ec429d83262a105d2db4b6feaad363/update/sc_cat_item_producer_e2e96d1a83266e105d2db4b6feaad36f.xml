@@ -31,7 +31,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Refund details</name>
+        <name>Refund Request  details</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -89,14 +89,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-07 10:57:26</sys_created_on>
         <sys_id>e2e96d1a83266e105d2db4b6feaad36f</sys_id>
-        <sys_mod_count>97</sys_mod_count>
-        <sys_name>Refund details</sys_name>
+        <sys_mod_count>111</sys_mod_count>
+        <sys_name>Refund Request  details</sys_name>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>sc_cat_item_producer_e2e96d1a83266e105d2db4b6feaad36f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 11:43:16</sys_updated_on>
+        <sys_updated_on>2025-07-09 04:18:36</sys_updated_on>
         <table_name>x_1771422_refund_0_refund_details</table_name>
         <taxonomy_topic/>
         <template/>
@@ -104,7 +104,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>97</version>
+        <version>111</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
