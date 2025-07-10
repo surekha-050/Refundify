@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>supporting_document0</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 04:40:58</sys_created_on>
+        <sys_id>82add926832aae105d2db4b6feaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>supporting_document0</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_ui_policy_action_82add926832aae105d2db4b6feaad36a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 04:40:58</sys_updated_on>
+        <table>x_1771422_refund_0_refund_details</table>
+        <ui_policy display_value="hide if reason is not damaged&#10;">0aadd926832aae105d2db4b6feaad364</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=82add926832aae105d2db4b6feaad36a"/>
+</record_update>

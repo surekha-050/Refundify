@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New section 1" section_id="76112cd683ae2e105d2db4b6feaad331" sys_domain="global" table="x_1771422_refund_0_refund_details" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order_id.contact_number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 05:37:57</sys_created_on>
+            <sys_id>03112cd683ae2e105d2db4b6feaad3da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">76112cd683ae2e105d2db4b6feaad331</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 05:37:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 05:37:57</sys_created_on>
+            <sys_id>0b112cd683ae2e105d2db4b6feaad3da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">76112cd683ae2e105d2db4b6feaad331</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 05:37:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order_id.email</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 05:37:57</sys_created_on>
+            <sys_id>03112cd683ae2e105d2db4b6feaad3db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">76112cd683ae2e105d2db4b6feaad331</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 05:37:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New section 1</caption>
+            <header>false</header>
+            <name>x_1771422_refund_0_refund_details</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 05:37:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>76112cd683ae2e105d2db4b6feaad331</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1771422_refund_0_refund_details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+            <sys_update_name>sys_ui_section_76112cd683ae2e105d2db4b6feaad331</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 05:37:56</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</application>
+        <file_path/>
+        <instance_id>5a798ecfeb234ad056eafddacad0cd2d</instance_id>
+        <instance_name>dev279350</instance_name>
+        <name>sys_ui_section_76112cd683ae2e105d2db4b6feaad331</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New section 1" section_id="76112cd683ae2e105d2db4b6feaad331" sys_domain="global" table="x_1771422_refund_0_refund_details" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>order_id.contact_number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-07 05:37:57</sys_created_on><sys_id>03112cd683ae2e105d2db4b6feaad3da</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">76112cd683ae2e105d2db4b6feaad331</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-07 05:37:57</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-07 05:37:57</sys_created_on><sys_id>0b112cd683ae2e105d2db4b6feaad3da</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">76112cd683ae2e105d2db4b6feaad331</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-07 05:37:57</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>order_id.email</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-07 05:37:57</sys_created_on><sys_id>03112cd683ae2e105d2db4b6feaad3db</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">76112cd683ae2e105d2db4b6feaad331</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-07 05:37:57</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New section 1</caption><header>false</header><name>x_1771422_refund_0_refund_details</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-07 05:37:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>76112cd683ae2e105d2db4b6feaad331</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1771422_refund_0_refund_details</sys_name><sys_overrides/><sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package><sys_policy/><sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope><sys_update_name>sys_ui_section_76112cd683ae2e105d2db4b6feaad331</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-07 05:37:56</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1986088063</payload_hash>
+        <record_name>Refund Details</record_name>
+        <reverted_from/>
+        <source>73ec429d83262a105d2db4b6feaad368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 05:37:57</sys_created_on>
+        <sys_id>83112cd683ae2e105d2db4b6feaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e36419180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 05:37:57</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>0b112cd62fae2e108c0a0e31e27e29dc</update_guid>
+        <update_guid_history>0b112cd62fae2e108c0a0e31e27e29dc:-1986088063</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 05:38:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>38ed3758665647908ddba319c9323100</sys_id>
+        <sys_metadata>76112cd683ae2e105d2db4b6feaad331</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New section 1</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_parent display_value="Refund Details">ffa980ce83e6ea105d2db4b6feaad38f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_scope_delete display_value="">a369cc8238a54ac09d526d2d3f514064</sys_scope_delete>
+        <sys_update_name>sys_ui_section_76112cd683ae2e105d2db4b6feaad331</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_76112cd683ae2e105d2db4b6feaad331">83112cd683ae2e105d2db4b6feaad3dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 05:38:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

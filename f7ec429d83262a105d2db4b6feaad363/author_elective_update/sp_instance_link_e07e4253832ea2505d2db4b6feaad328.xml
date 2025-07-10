@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>book</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Browse and search for articles, rate or submit feedback</short_description>
+        <size>md</size>
+        <sp_column display_value="2">2c7e4253832ea2505d2db4b6feaad325</sp_column>
+        <sp_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 16:09:34</sys_created_on>
+        <sys_id>e07e4253832ea2505d2db4b6feaad328</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Knowledge Base</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sp_instance_link_e07e4253832ea2505d2db4b6feaad328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 16:58:35</sys_updated_on>
+        <title>Knowledge Base</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=e07e4253832ea2505d2db4b6feaad328"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</application>
+        <file_path/>
+        <instance_id>5a798ecfeb234ad056eafddacad0cd2d</instance_id>
+        <instance_name>dev279350</instance_name>
+        <name>sp_instance_link_e07e4253832ea2505d2db4b6feaad328</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;book&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description&gt;Browse and search for articles, rate or submit feedback&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;2c7e4253832ea2505d2db4b6feaad325&lt;/sp_column&gt;&lt;sp_page display_value="kb_view2"&gt;26c2e030d7201200a9addd173e24d437&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-10 16:09:34&lt;/sys_created_on&gt;&lt;sys_id&gt;e07e4253832ea2505d2db4b6feaad328&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Knowledge Base&lt;/sys_name&gt;&lt;sys_package display_value="Refundify" source="x_1771422_refund_0"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Refundify"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_e07e4253832ea2505d2db4b6feaad328&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-10 16:58:35&lt;/sys_updated_on&gt;&lt;title&gt;Knowledge Base&lt;/title&gt;&lt;type&gt;page&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e07e4253832ea2505d2db4b6feaad328"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1108462011</payload_hash>
+        <record_name>Knowledge Base</record_name>
+        <reverted_from/>
+        <source>73ec429d83262a105d2db4b6feaad368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 16:58:35</sys_created_on>
+        <sys_id>66a99edf832ea2505d2db4b6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f54651c40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 16:58:35</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>2ea99edfea2ea25034393c2235ddbcb6</update_guid>
+        <update_guid_history>2ea99edfea2ea25034393c2235ddbcb6:-1108462011,287e4253f72ea2502be6c38127d2fc29:-1203111834</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Knowledge Base">afb91e5b832ea2505d2db4b6feaad3b8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 16:58:56</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>123f0d46c5374ed38f3a6d4cc60ba189</sys_id>
+        <sys_metadata>e07e4253832ea2505d2db4b6feaad328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Knowledge Base</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_scope_delete display_value="">a369cc8238a54ac09d526d2d3f514064</sys_scope_delete>
+        <sys_update_name>sp_instance_link_e07e4253832ea2505d2db4b6feaad328</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_e07e4253832ea2505d2db4b6feaad328">66a99edf832ea2505d2db4b6feaad3b7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 16:58:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

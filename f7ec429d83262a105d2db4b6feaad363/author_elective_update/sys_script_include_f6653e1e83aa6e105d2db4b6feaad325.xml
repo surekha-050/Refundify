@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1771422_refund_0.Refund details</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Refund details</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var Refund_details = Class.create();
+Refund_details.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	populateRefundDetails: function() {
+    var producerValues = this.getParameter('sysparm_orderId');
+    gs.info('Hello : ' + producerValues);
+ 
+    var refund = {
+      full_name: null,
+      email: null,
+      contact_no: null,
+      door_no_street_line_1: null,
+      street_line_2: null,
+      street_line_3: null,
+      city: null,
+      state: null,
+      pincode: null
+    };
+ 
+    var order = new GlideRecord('x_1771422_refund_0_order_details');
+    order.addQuery('order_id', producerValues);
+    order.query();
+ 
+    if (order.next()) {
+      refund.full_name = order.full_name;
+      refund.email = order.email;
+      refund.contact_no = order.contact_no;
+      refund.door_no_street_line_1 = order.door_no_street_line_1;
+      refund.street_line_2 = order.street_line_2;
+      refund.street_line_3 = order.street_line_3;
+      refund.city = order.city;
+      refund.state = order.state;
+      refund.pincode = order.pincode;
+    } else {
+      gs.info("No matching order found for Order ID: " + producerValues);
+    }
+ 
+    var payload = JSON.stringify(refund);
+    gs.info("Response Payload: " + payload);
+    return payload;
+  },
+
+    type: 'Refund details'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 16:27:57</sys_created_on>
+        <sys_id>f6653e1e83aa6e105d2db4b6feaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refund details</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_script_include_f6653e1e83aa6e105d2db4b6feaad325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 16:27:57</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</application>
+        <file_path/>
+        <instance_id>5a798ecfeb234ad056eafddacad0cd2d</instance_id>
+        <instance_name>dev279350</instance_name>
+        <name>sys_script_include_f6653e1e83aa6e105d2db4b6feaad325</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1771422_refund_0.Refund details&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;Refund details&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var Refund_details = Class.create();
+Refund_details.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	populateRefundDetails: function() {
+    var producerValues = this.getParameter('sysparm_orderId');
+    gs.info('Hello : ' + producerValues);
+ 
+    var refund = {
+      full_name: null,
+      email: null,
+      contact_no: null,
+      door_no_street_line_1: null,
+      street_line_2: null,
+      street_line_3: null,
+      city: null,
+      state: null,
+      pincode: null
+    };
+ 
+    var order = new GlideRecord('x_1771422_refund_0_order_details');
+    order.addQuery('order_id', producerValues);
+    order.query();
+ 
+    if (order.next()) {
+      refund.full_name = order.full_name;
+      refund.email = order.email;
+      refund.contact_no = order.contact_no;
+      refund.door_no_street_line_1 = order.door_no_street_line_1;
+      refund.street_line_2 = order.street_line_2;
+      refund.street_line_3 = order.street_line_3;
+      refund.city = order.city;
+      refund.state = order.state;
+      refund.pincode = order.pincode;
+    } else {
+      gs.info("No matching order found for Order ID: " + producerValues);
+    }
+ 
+    var payload = JSON.stringify(refund);
+    gs.info("Response Payload: " + payload);
+    return payload;
+  },
+
+    type: 'Refund details'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-07 16:27:57&lt;/sys_created_on&gt;&lt;sys_id&gt;f6653e1e83aa6e105d2db4b6feaad325&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Refund details&lt;/sys_name&gt;&lt;sys_package display_value="Refundify" source="x_1771422_refund_0"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Refundify"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_f6653e1e83aa6e105d2db4b6feaad325&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-07 16:27:57&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1693367618</payload_hash>
+        <record_name>Refund details</record_name>
+        <reverted_from/>
+        <source>73ec429d83262a105d2db4b6feaad368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 16:27:58</sys_created_on>
+        <sys_id>bce5765e83aa6e105d2db4b6feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e5b735360000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 16:27:58</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>b0e5765eb6aa6e10c9330697dbefffb1</update_guid>
+        <update_guid_history>b0e5765eb6aa6e10c9330697dbefffb1:-1693367618</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 04:45:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>93771274384a41bda4d2b738aa9d3859</sys_id>
+        <sys_metadata>f6653e1e83aa6e105d2db4b6feaad325</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refund details</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_scope_delete display_value="">a369cc8238a54ac09d526d2d3f514064</sys_scope_delete>
+        <sys_update_name>sys_script_include_f6653e1e83aa6e105d2db4b6feaad325</sys_update_name>
+        <sys_update_version display_value="sys_script_include_f6653e1e83aa6e105d2db4b6feaad325">bce5765e83aa6e105d2db4b6feaad3b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 04:45:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

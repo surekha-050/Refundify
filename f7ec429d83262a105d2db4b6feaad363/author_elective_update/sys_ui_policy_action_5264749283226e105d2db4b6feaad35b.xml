@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>account_number</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 07:02:17</sys_created_on>
+        <sys_id>5264749283226e105d2db4b6feaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>account_number</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5264749283226e105d2db4b6feaad35b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 07:02:17</sys_updated_on>
+        <table>x_1771422_refund_0_order_details</table>
+        <ui_policy display_value="hide account no and IFSC code">9a64749283226e105d2db4b6feaad356</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=5264749283226e105d2db4b6feaad35b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</application>
+        <file_path/>
+        <instance_id>5a798ecfeb234ad056eafddacad0cd2d</instance_id>
+        <instance_name>dev279350</instance_name>
+        <name>sys_ui_policy_action_5264749283226e105d2db4b6feaad35b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>account_number</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-07 07:02:17</sys_created_on><sys_id>5264749283226e105d2db4b6feaad35b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>account_number</sys_name><sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package><sys_policy/><sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope><sys_update_name>sys_ui_policy_action_5264749283226e105d2db4b6feaad35b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-07 07:02:17</sys_updated_on><table>x_1771422_refund_0_order_details</table><ui_policy display_value="hide account no and IFSC code">9a64749283226e105d2db4b6feaad356</ui_policy><value/><value_action>ignore</value_action><visible>false</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=5264749283226e105d2db4b6feaad35b"/></record_update>]]></payload>
+        <payload_hash>-889219358</payload_hash>
+        <record_name>account_number</record_name>
+        <reverted_from/>
+        <source>73ec429d83262a105d2db4b6feaad368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 07:02:17</sys_created_on>
+        <sys_id>5664b49283226e105d2db4b6feaad300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e3b14d6b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 07:02:17</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>5a64749236226e1043865a84cc743fff</update_guid>
+        <update_guid_history>5a64749236226e1043865a84cc743fff:-889219358</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 10:32:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>379b501137d24e9b9c53697893027261</sys_id>
+        <sys_metadata>5264749283226e105d2db4b6feaad35b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>account_number</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_scope_delete display_value="">a369cc8238a54ac09d526d2d3f514064</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_5264749283226e105d2db4b6feaad35b</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_5264749283226e105d2db4b6feaad35b">5664b49283226e105d2db4b6feaad300</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 10:32:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

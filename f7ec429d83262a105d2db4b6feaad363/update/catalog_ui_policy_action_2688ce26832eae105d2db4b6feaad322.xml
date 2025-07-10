@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
-        <catalog_item display_value="Refund Request  details">e2e96d1a83266e105d2db4b6feaad36f</catalog_item>
+        <catalog_item display_value=" Request  for Refund">e2e96d1a83266e105d2db4b6feaad36f</catalog_item>
         <catalog_variable>IO:0e4fadde83266e105d2db4b6feaad3b1</catalog_variable>
         <cleared>false</cleared>
         <disabled>ignore</disabled>

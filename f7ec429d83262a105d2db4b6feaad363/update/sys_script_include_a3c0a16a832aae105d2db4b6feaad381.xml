@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1771422_refund_0.refund_details</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>refund_details</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var refund_details = Class.create();
+refund_details.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getOrderInfo: function(){
+		var gr = new GlideRecord('x_1771422_refund_0_order_details');
+		gr.addQuery('sys_id', this.getParameter('sysparm_orderId'));
+		gs.info(this.getParameter('sysparm_orderId'));
+		gr.query();
+		var orderdetails = {};
+		if(gr.next()){
+			gs.info('Inside If condition');
+			orderdetails.full_name = gr.full_name + '';
+			orderdetails.email = gr.email + '';
+			orderdetails.contact_number = gr.contact_number + '';
+			orderdetails.district = gr.district + '';
+			orderdetails.street_line_2 = gr.street_line_2 + '';
+			orderdetails.door_no_street_line_1 = gr.door_no_street_line_1 + '';
+			orderdetails.street_line_3 = gr.street_line_3 + '';
+			orderdetails.city = gr.city + '';
+			orderdetails.pincode = gr.pincode + '';
+            orderdetails.state = gr.state + '';
+			orderdetails.date_of_purchase = gr.date_of_purchase + '';
+		}
+		gs.info(orderdetails);
+		return JSON.stringify(orderdetails);
+	},
+    type: 'refund_details'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 05:06:20</sys_created_on>
+        <sys_id>a3c0a16a832aae105d2db4b6feaad381</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>refund_details</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_script_include_a3c0a16a832aae105d2db4b6feaad381</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 05:21:38</sys_updated_on>
+    </sys_script_include>
+</record_update>

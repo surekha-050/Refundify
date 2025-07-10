@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ffa980ce83e6ea105d2db4b6feaad38f" label="Refund Details" max_length="40" name="x_1771422_refund_0_refund_details" text_index="true" type="collection">
+        <element label="Approver Notes" max_length="4000" name="approver_notes" type="string"/>
+        <element label="Order ID" mandatory="true" max_length="32" name="order_id" reference="x_1771422_refund_0_order_details" type="reference"/>
+        <element choice="1" label="Reason for Return" mandatory="true" max_length="40" name="reason_for_return" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Damaged Product" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Changed my mind" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Wrong Product Received" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Others" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="Product not as described" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Late delivery" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Date of Purchase" mandatory="true" max_length="32" name="date_of_purchase" type="glide_date"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Comments" mandatory="true" max_length="225" name="comments" type="string"/>
+        <element label="IFSC Code" max_length="40" name="ifsc_code" type="string"/>
+        <element choice="3" default="1&#10;" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Reviewer Approval" sequence="1" value="in_reviewer_approval"/>
+                <element inactive_on_update="false" label="Send Back" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="In draft" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Completed" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Re-Submitted" sequence="6" value="7"/>
+                <element inactive_on_update="false" label="Cancel" sequence="7" value="8"/>
+                <element inactive_on_update="false" label="In delivery Team approval" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="Account Number" max_length="225" name="account_number" type="string"/>
+        <element label="Supporting Documents" max_length="40" name="supporting_document0" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Customer ID" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

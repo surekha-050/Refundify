@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1771422_refund_0.Refund details</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Refund details</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var RefundDetails = Class.create();
+RefundDetails.prototype = {
+    initialize: function() {},
+
+    populateRefundDetails: function(producerValues) {
+        var order = new GlideRecord('x_1771422_refund_0_order_details');
+        order.addQuery('order_id', producerValues);
+        order.query();
+        if (order.next()) {
+            var refund = {};
+            refund.full_name = order.full_name;
+            refund.email = order.email;
+            refund.contact_no = order.contact_no;
+            refund.address = order.address;
+            refund.city = order.city;
+            refund.state = order.state;
+            refund.pin_code = order.pin_code;
+			
+        }
+		return JSON.stringify(refund);
+    },
+    type: 'RefundDetails'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 11:44:10</sys_created_on>
+        <sys_id>a123b15683666e105d2db4b6feaad39e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Refund details</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_script_include_a123b15683666e105d2db4b6feaad39e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 12:15:01</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</application>
+        <file_path/>
+        <instance_id>5a798ecfeb234ad056eafddacad0cd2d</instance_id>
+        <instance_name>dev279350</instance_name>
+        <name>sys_script_include_a123b15683666e105d2db4b6feaad39e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1771422_refund_0.Refund details&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;Refund details&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var RefundDetails = Class.create();
+RefundDetails.prototype = {
+    initialize: function() {},
+
+    populateRefundDetails: function(producerValues) {
+        var order = new GlideRecord('x_1771422_refund_0_order_details');
+        order.addQuery('order_id', producerValues);
+        order.query();
+        if (order.next()) {
+            var refund = {};
+            refund.full_name = order.full_name;
+            refund.email = order.email;
+            refund.contact_no = order.contact_no;
+            refund.address = order.address;
+            refund.city = order.city;
+            refund.state = order.state;
+            refund.pin_code = order.pin_code;
+			
+        }
+		return JSON.stringify(refund);
+    },
+    type: 'RefundDetails'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-07 11:44:10&lt;/sys_created_on&gt;&lt;sys_id&gt;a123b15683666e105d2db4b6feaad39e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Refund details&lt;/sys_name&gt;&lt;sys_package display_value="Refundify" source="x_1771422_refund_0"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Refundify"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a123b15683666e105d2db4b6feaad39e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-07 12:15:01&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1775241936</payload_hash>
+        <record_name>Refund details</record_name>
+        <reverted_from/>
+        <source>73ec429d83262a105d2db4b6feaad368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 12:15:01</sys_created_on>
+        <sys_id>67fbbd1283a66e105d2db4b6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e4cfa0520000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 12:15:01</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>2ffbbd121fa66e1045ff4b659e87212c</update_guid>
+        <update_guid_history>2ffbbd121fa66e1045ff4b659e87212c:1775241936,29c8f91eae666e106467ae958518d813:564034200,0fe7315616666e10287decf91cf0d271:523164317,f3b7b99a4b666e105f2b79411bf833a2:-1203670773,5666b15632666e106e6cc00958c34fdc:-1558006414,f7e4f5d6e2666e10cde9f3370fb47f27:-912593539</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 12:30:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0871ee98561d4d7c8b388ba4e1e81844</sys_id>
+        <sys_metadata>a123b15683666e105d2db4b6feaad39e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refund details</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_scope_delete display_value="">a369cc8238a54ac09d526d2d3f514064</sys_scope_delete>
+        <sys_update_name>sys_script_include_a123b15683666e105d2db4b6feaad39e</sys_update_name>
+        <sys_update_version display_value="sys_script_include_a123b15683666e105d2db4b6feaad39e">67fbbd1283a66e105d2db4b6feaad32d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 12:30:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

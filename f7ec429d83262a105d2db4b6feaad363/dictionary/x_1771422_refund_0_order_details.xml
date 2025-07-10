@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8a3accce83e6ea105d2db4b6feaad3a3" label="Order Details" max_length="40" name="x_1771422_refund_0_order_details" text_index="true" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Order ID" mandatory="true" max_length="40" name="number" type="string"/>
+        <element label="Contact Number" mandatory="true" max_length="10" name="contact_number" type="string"/>
+        <element choice="1" label="Product Category" max_length="40" name="product_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Home&amp;kitchen" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Toys&amp;games" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="Fashion" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Electronics" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Books" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Personal care" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element label="District" mandatory="true" max_length="40" name="district" type="string"/>
+        <element label="Street Line 2" mandatory="true" max_length="40" name="street_line_2" type="string"/>
+        <element label="Email" mandatory="true" max_length="40" name="email" type="email"/>
+        <element label="Street Line 3" max_length="40" name="street_line_3" type="string"/>
+        <element label="Account Number" max_length="40" name="account_number" type="string"/>
+        <element label="Product Name" max_length="40" name="product_name" type="string"/>
+        <element choice="1" label="Payment method" max_length="40" name="payment_method" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="UPI" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Bank Transfer" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="COD" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="Quantity" max_length="40" name="quantity" type="string"/>
+        <element label="Date of Purchase" mandatory="true" max_length="40" name="date_of_purchase" type="glide_date"/>
+        <element label="total amount" max_length="40" name="total_amount" type="string"/>
+        <element label="PinCode" mandatory="true" max_length="6" name="pincode" type="string"/>
+        <element label="Door No/Street Line 1" mandatory="true" max_length="40" name="door_no_street_line_1" type="string"/>
+        <element label="Reason for Return" max_length="40" name="reason_for_return" type="string"/>
+        <element label="IFSC Code" max_length="40" name="ifsc_code" type="string"/>
+        <element label="Comments" max_length="225" name="comments" type="string"/>
+        <element label="Full Name" mandatory="true" max_length="40" name="full_name" type="string"/>
+        <element label="city" mandatory="true" max_length="40" name="city" type="string"/>
+        <element label="State" mandatory="true" max_length="40" name="state" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

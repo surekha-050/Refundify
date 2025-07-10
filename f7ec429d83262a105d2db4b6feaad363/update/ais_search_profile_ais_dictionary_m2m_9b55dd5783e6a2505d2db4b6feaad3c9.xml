@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_1771422_refund_0_refundify_search_profile_default_spell_check_dictionary">1355dd5783e6a2505d2db4b6feaad3c6</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="refundify Search Profile">5d555d5741e6a2509d7abb46c6b8676f</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 12:00:10</sys_created_on>
+        <sys_id>9b55dd5783e6a2505d2db4b6feaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1771422_refund_0_refundify_search_profile_default_spell_check_dictionary.refundify Search Profile</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_9b55dd5783e6a2505d2db4b6feaad3c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 12:00:10</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

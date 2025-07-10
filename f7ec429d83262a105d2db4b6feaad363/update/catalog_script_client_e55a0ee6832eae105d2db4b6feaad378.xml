@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Refund Request  details">e2e96d1a83266e105d2db4b6feaad36f</cat_item>
+        <cat_item display_value=" Request  for Refund">e2e96d1a83266e105d2db4b6feaad36f</cat_item>
         <cat_variable>IO:c82302da83a66e105d2db4b6feaad3a2</cat_variable>
         <condition/>
         <description/>

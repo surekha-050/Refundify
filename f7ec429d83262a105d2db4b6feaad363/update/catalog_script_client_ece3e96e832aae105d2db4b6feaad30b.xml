@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Refund Request  details">e2e96d1a83266e105d2db4b6feaad36f</cat_item>
+        <cat_item display_value=" Request  for Refund">e2e96d1a83266e105d2db4b6feaad36f</cat_item>
         <cat_variable>IO:73cfa91a83266e105d2db4b6feaad332</cat_variable>
         <condition/>
         <description/>
@@ -38,11 +38,12 @@
 			g_form.setValue('pincode', res.pincode);
 			g_form.setValue('state', res.state);
 			g_form.setValue('street_line2', res.street_line_2);
-			g_form.setValue('sdoor_no_street_line_1', res.door_no_street_line_1);
+			g_form.setValue('door_no_street_line_1', res.door_no_street_line_1);
 			g_form.setValue('district', res.district);
             g_form.setValue('street_line3', res.street_line_3);
             g_form.setValue('contact_number', res.contact_number);
             g_form.setValue('email', res.email);
+			g_form.setValue('date_of_purchase', res.date_of_purchase);
         } 
     }
    //Type appropriate comment here, and begin script below
@@ -54,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ece3e96e832aae105d2db4b6feaad30b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>getOrderDetails</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
@@ -62,7 +63,7 @@
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>catalog_script_client_ece3e96e832aae105d2db4b6feaad30b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 11:52:02</sys_updated_on>
+        <sys_updated_on>2025-07-09 05:06:00</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
