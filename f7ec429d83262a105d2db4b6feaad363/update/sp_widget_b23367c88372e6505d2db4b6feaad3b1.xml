@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>&lt;style&gt;&#13;
+.circle {&#13;
+  width: 35px;&#13;
+  height: 35px;&#13;
+  background: #f05a9d;&#13;
+  color: white;&#13;
+  border-radius: 50%;&#13;
+  margin: 0 auto 5px;&#13;
+  line-height: 35px;&#13;
+  font-weight: bold;&#13;
+}&#13;
+.step {&#13;
+  text-align: center;&#13;
+  width: 140px;&#13;
+}&#13;
+&lt;/style&gt;</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>refund_process_flow</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Refund Process Flow</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[//(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  // var refundId = input.refundId;
+ // var gr = new GlideRecord('x_1771422_refund_0_refund_details');
+  //gr.get(refundid);
+
+  //data.status = gr.status.toString(); // e.g., 'reviewer_approval'
+
+//})();
+(function() {
+  var orderId = input && input.orderId;
+
+  if (!orderId) {
+    data.status = 'Missing orderId input';
+    return;
+  }
+
+  var gr = new GlideRecord('x_1771422_refund_0_refund_details');
+
+  if (gr.get('order_id', orderId)) {
+    data.status = gr.status.toString();
+  } else {
+    data.status = 'Order not found';
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 06:18:38</sys_created_on>
+        <sys_id>b23367c88372e6505d2db4b6feaad3b1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Refund Process Flow</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sp_widget_b23367c88372e6505d2db4b6feaad3b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 17:34:20</sys_updated_on>
+        <template><![CDATA[<div class="text-center mb-4">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <h3 style="font-weight: bold;">Refund Process</h3>
+  <div style="height:30px;"></div>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+    
+    <div class="step">
+      <div class="circle"></div>
+      <div><i class="fas fa-file-alt fa-2x text-info"></i></div>
+      <p>Refund Requested</p>
+    </div>
+    
+    <i class="fas fa-arrow-right fa-2x text-secondary"></i>
+    
+    <div class="step">
+      <div class="circle"></div>
+      <div><i class="fas fa-user-check fa-2x text-warning"></i></div>
+      <p>In Reviewer Approval</p>
+    </div>
+    
+    <i class="fas fa-arrow-right fa-2x text-secondary"></i>
+    
+    <div class="step">
+      <div class="circle"></div>
+      <div><i class="fas fa-truck fa-2x text-primary"></i></div>
+      <p>In Delivery Team Approval</p>
+    </div>
+    
+    <i class="fas fa-arrow-right fa-2x text-secondary"></i>
+    
+    <div class="step">
+      <div class="circle"></div>
+      <div><i class="fas fa-check-circle fa-2x text-success"></i> / 
+           <i class="fas fa-times-circle fa-2x text-danger"></i></div>
+      <p>Completed / Rejected</p>
+    </div>
+
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

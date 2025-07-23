@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>email</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Email verification</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+  if (isLoading || !newValue) return;
+
+  var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/i;
+
+  if (!emailRegex.test(newValue)) {
+    g_form.showFieldMsg(control.name, 'Please enter a valid email address.', 'error');
+  } else {
+    g_form.hideFieldMsg(control.name, true);
+  }
+}
+  ]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 05:35:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a878a926836aae105d2db4b6feaad397</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Email verification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_script_client_a878a926836aae105d2db4b6feaad397</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 08:00:54</sys_updated_on>
+        <table>x_1771422_refund_0_order_details</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</application>
+        <file_path/>
+        <instance_id>5a798ecfeb234ad056eafddacad0cd2d</instance_id>
+        <instance_name>dev279350</instance_name>
+        <name>sys_script_client_a878a926836aae105d2db4b6feaad397</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;email&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Email verification&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+  if (isLoading || !newValue) return;
+
+  var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/i;
+
+  if (!emailRegex.test(newValue)) {
+    g_form.showFieldMsg(control.name, 'Please enter a valid email address.', 'error');
+  } else {
+    g_form.hideFieldMsg(control.name, true);
+  }
+}
+  ]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 05:35:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a878a926836aae105d2db4b6feaad397&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Email verification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Refundify" source="x_1771422_refund_0"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Refundify"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_a878a926836aae105d2db4b6feaad397&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 08:00:54&lt;/sys_updated_on&gt;&lt;table&gt;x_1771422_refund_0_order_details&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>679301167</payload_hash>
+        <record_name>Email verification</record_name>
+        <reverted_from/>
+        <source>73ec429d83262a105d2db4b6feaad368</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 08:00:54</sys_created_on>
+        <sys_id>b26b42e6832eae105d2db4b6feaad3b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e90d55550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 08:00:54</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7a6b42e6612eae10d4195f6dec835cb3</update_guid>
+        <update_guid_history>7a6b42e6612eae10d4195f6dec835cb3:679301167,8f4d292a8d6aae1012135d884d781287:-1983000641,ab3d292a806aae104df2a86846773983:-1400281531,c9dbe5e6266aae104b74f80aba40cf2f:811378667,202ba166a96aae107ec212e8026a4d95:-246726741,3dea612adb6aae104d8aeb8996dbfb8d:811378667,532a6d62a36aae10192153aac047864e:1774314541</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 08:56:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>5ed803b7d521419daa7810e6fc1ddfb1</sys_id>
+        <sys_metadata>a878a926836aae105d2db4b6feaad397</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Email verification</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_parent display_value="Order Details">8a3accce83e6ea105d2db4b6feaad3a3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_scope_delete display_value="">a369cc8238a54ac09d526d2d3f514064</sys_scope_delete>
+        <sys_update_name>sys_script_client_a878a926836aae105d2db4b6feaad397</sys_update_name>
+        <sys_update_version display_value="sys_script_client_a878a926836aae105d2db4b6feaad397">b26b42e6832eae105d2db4b6feaad3b4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 08:56:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

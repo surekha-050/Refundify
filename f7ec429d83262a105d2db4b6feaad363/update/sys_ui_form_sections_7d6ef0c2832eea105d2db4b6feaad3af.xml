@@ -70,6 +70,20 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-07-07 06:41:02</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-16 12:34:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>46a6d05d8372e2105d2db4b6feaad3c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1771422_refund_0_refund_details" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">7d6ef0c2832eea105d2db4b6feaad3af</sys_ui_form>
+            <sys_ui_section caption="Activity stream" display_value="Activity stream" name="x_1771422_refund_0_refund_details" sys_domain="global" view="Default view">f1a6d05d8372e2105d2db4b6feaad3bd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-16 12:34:02</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1771422_refund_0_refund_details</name>
             <roles/>

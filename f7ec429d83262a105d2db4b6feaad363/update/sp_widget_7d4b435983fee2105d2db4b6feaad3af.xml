@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.policy-wrapper {&#13;
+  display: flex;&#13;
+  gap: 40px;&#13;
+  background-color: #f6e7db;&#13;
+  padding: 30px;&#13;
+  font-family: 'Poppins', sans-serif;&#13;
+}&#13;
+&#13;
+.policy-sidebar {&#13;
+  max-width: 250px;&#13;
+}&#13;
+&#13;
+.policy-sidebar h2 {&#13;
+  font-size: 22px;&#13;
+  font-weight: bold;&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+.policy-list {&#13;
+  list-style: none;&#13;
+  padding: 0;&#13;
+  margin: 0;&#13;
+}&#13;
+&#13;
+.policy-list li {&#13;
+  margin: 12px 0;&#13;
+}&#13;
+&#13;
+.policy-list a {&#13;
+  text-decoration: none;&#13;
+  color: #333;&#13;
+  font-size: 16px;&#13;
+  transition: color 0.3s ease;&#13;
+}&#13;
+&#13;
+.policy-list a:hover {&#13;
+  color: #007bff;&#13;
+}&#13;
+&#13;
+.policy-content {&#13;
+  flex: 1;&#13;
+  background: #fff;&#13;
+  padding: 20px;&#13;
+  border-radius: 10px;&#13;
+  min-height: 300px;&#13;
+  color: #333;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>links</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Links  for refund</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 01:45:29</sys_created_on>
+        <sys_id>7d4b435983fee2105d2db4b6feaad3af</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Links  for refund</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sp_widget_7d4b435983fee2105d2db4b6feaad3af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 06:23:24</sys_updated_on>
+        <template><![CDATA[<div class="policy-wrapper">
+  <div class="policy-sidebar">
+    <h2>Complex Policies? Shop Easy With Us!</h2>
+    <ul class="policy-list">
+      <li><a href="javascript:void(0)" onclick="
+        document.querySelectorAll('.content-box').forEach(e => e.style.display='none');
+        document.getElementById('about').style.display='block';
+      ">About Us</a></li>
+      
+       <li><a href="javascript:void(0)" onclick="
+        document.querySelectorAll('.content-box').forEach(e => e.style.display='none');
+        document.getElementById('terms').style.display='block';
+      ">Instructions</a></li>
+
+      <li><a href="javascript:void(0)" onclick="
+        document.querySelectorAll('.content-box').forEach(e => e.style.display='none');
+        document.getElementById('help').style.display='block';
+      ">Help & Support</a></li>
+
+      <li><a href="javascript:void(0)" onclick="
+        document.querySelectorAll('.content-box').forEach(e => e.style.display='none');
+        document.getElementById('refund').style.display='block';
+      ">Return/Refund Policy</a></li>
+
+      <li><a href="javascript:void(0)" onclick="
+        document.querySelectorAll('.content-box').forEach(e => e.style.display='none');
+        document.getElementById('shipping').style.display='block';
+      ">Shipping Policy</a></li>
+
+
+      <li><a href="javascript:void(0)" onclick="
+        document.querySelectorAll('.content-box').forEach(e => e.style.display='none');
+        document.getElementById('privacy').style.display='block';
+      ">Privacy Policy</a></li>
+
+      
+    </ul>
+  </div>
+
+  <div class="policy-content">
+    <div id="about" class="content-box" style="display:block;">
+      <h3>About Refundify</h3>
+
+  <p>
+    At <strong>Refundify</strong>, we believe that customer satisfaction doesn’t end at the checkout — it continues until you’re completely happy with your purchase. That’s why we created a platform dedicated to making refunds and return requests faster, smoother, and more transparent.
+  </p>
+
+  <p>
+    Whether it's a damaged item, an incorrect order, or a change of mind, Refundify is built to simplify the refund process for both customers and sellers. Our two-tier approval system ensures that each request is verified and handled with care, reducing delays and confusion.
+  </p>
+
+  <p>
+    With a focus on user experience and trust, we help customers submit, track, and manage their refund requests — all in one place. Our goal is to bring clarity and ease to what’s often a frustrating process.
+  </p>
+
+  <h4>]]>🌟<![CDATA[ Why Choose Refundify?</h4>
+  <ul>
+    <li>Easy refund request submission</li>
+    <li>Transparent two-step verification process</li>
+    <li>Real-time status tracking</li>
+    <li>Customer-first policies</li>
+  </ul>
+
+  <p>
+    Join thousands of happy shoppers who trust Refundify to handle their return needs — because getting your money back should be as easy as spending it!
+  </p>
+    </div>
+    <div id="help" class="content-box" style="display:none;">
+      <p>Help & Support
+Need Assistance? We’re Here for You.
+
+If you have any questions or concerns related to your order, delivery, refund, or anything else, please don’t hesitate to contact us.
+
+Here’s how you can get support:
+
+<li>]]>📧<![CDATA[ Email: Riya@gmail.com</li>
+
+<li>☎️ Phone: +91-7396305080 (Mon–Fri, 9AM–6PM)</li>
+</p>
+    </div>
+    <div id="refund" class="content-box" style="display:none;">
+    <h3>Return & Refund Policy</h3>
+    <p>We want you to be happy with your purchase. If you're not satisfied, we're here to help.</p>
+
+    <h4>]]>🟢<![CDATA[ Eligibility Criteria for Returns</h4>
+    <ul>
+    <li>Items must be returned within <strong>7 days</strong> from the delivery date.</li>
+    <li>Product must be unused, unwashed, and in original packaging.</li>
+    <li>Invoice or proof of purchase is mandatory for processing returns.</li>
+    <li>Items must include original tags and accessories (if applicable).</li>
+    </ul>
+
+    <h4>]]>🔴<![CDATA[ Non-Refundable/Non-Returnable Cases</h4>
+    <ul>
+    <li>Items marked as “Final Sale” or “Non-Returnable”.</li>
+    <li>Used, damaged, or altered products.</li>
+    <li>Personalized or custom-made items.</li>
+    <li>Perishable goods such as food, flowers, or hygiene products.</li>
+    <li>Gift cards and promotional items.</li>
+    </ul>
+
+    <h4>]]>💸<![CDATA[ Refund Timeline</h4>
+    <p>
+    Approved refunds are processed within <strong>5–7 business days</strong> to your original payment method.
+    </p>
+    </div>
+    <div id="shipping" class="content-box" style="display:none;">
+      <h3>Shipping Policy</h3>
+
+  <h4>]]>🚚<![CDATA[ Order Processing</h4>
+  <ul>
+    <li>All orders are processed within <strong>1–2 business days</strong> (excluding weekends and holidays).</li>
+    <li>Once your order is shipped, you will receive a confirmation email with tracking information.</li>
+  </ul>
+
+  <h4>]]>🌍<![CDATA[ Shipping Methods & Delivery Time</h4>
+  <ul>
+    <li><strong>Standard Shipping:</strong> 5–7 business days</li>
+    <li><strong>Express Shipping:</strong> 2–4 business days</li>
+    <li><strong>International Shipping:</strong> 7–14 business days (depending on destination)</li>
+  </ul>
+
+  <h4>]]>💲<![CDATA[ Shipping Charges</h4>
+  <ul>
+    <li>Shipping charges are calculated at checkout based on your location and selected delivery method.</li>
+    <li>Free shipping may be available for orders above a certain amount. Check current offers during checkout.</li>
+  </ul>
+
+  <h4>⚠️ Delivery Delays</h4>
+  <p>
+    While we strive for timely delivery, delays may occur due to high order volumes, weather conditions, or courier issues. We appreciate your patience and understanding.
+  </p>
+
+  <h4>❗ Incorrect Addresses</h4>
+  <p>
+    Please ensure that all shipping details are correct before submitting your order. We are not responsible for lost packages due to incorrect addresses.
+  </p>
+
+  <h4>]]>📩<![CDATA[ Need Assistance?</h4>
+  <p>
+    If you have any questions regarding shipping or your order status, feel free to contact our Help & Support team.
+  </p>
+</div>
+    <div id="terms" class="content-box" style="display:none;">
+      <h3>Instructions</h3>
+
+  <p>
+    Refundify is your one-stop solution for managing return and refund requests efficiently. Follow these simple steps to submit and track your refund:
+  </p>
+
+  <h4>]]>📝<![CDATA[ Step 1: Submit a Refund Request</h4>
+  <ul>
+    <li>Log in to your Refundify account.</li>
+    <li>Navigate to the <strong>Submit Refund</strong> section.</li>
+    <li>Enter the required details like Order ID, reason for refund, and upload any necessary proof (images, receipts).</li>
+    <li>Click on <strong>Submit Request</strong>.</li>
+  </ul>
+
+  <h4>]]>🔍<![CDATA[ Step 2: Two-Tier Verification</h4>
+  <p>Your request will go through two levels of verification:</p>
+  <ol>
+    <li><strong>Reviewer Approval:</strong> The request is checked for completeness and eligibility.</li>
+    <li><strong>Delivery Team Review:</strong> Once approved by the reviewer, the delivery team verifies the return logistics and eligibility.</li>
+  </ol>
+
+  <h4>↩️ Step 3: Resubmission or Rejection</h4>
+  <ul>
+    <li>If your request has missing or incorrect details, it will be <strong>sent back</strong> for corrections — you can <strong>resubmit</strong> it.</li>
+    <li>If your request is <strong>rejected</strong>, you will not be able to resubmit.</li>
+  </ul>
+
+  <h4>]]>🚫<![CDATA[ Cancel Your Request</h4>
+  <ul>
+    <li>You can cancel your request <strong>anytime before Delivery Team approval</strong>.</li>
+    <li>After it moves to the reviewer stage, cancellation will no longer be possible.</li>
+  </ul>
+
+  <h4>✅ Final Approval</h4>
+  <ul>
+    <li>Once approved by both Reviewer and Delivery Team, your refund will be processed to your original payment method.</li>
+    <li>You can track the status of your request in the <strong>My Requests</strong> section.</li>
+  </ul>
+
+  <h4>]]>📞<![CDATA[ Need Support?</h4>
+  <p>
+    If you face any issues, reach out to our support team through the <strong>Help & Support</strong> tab.
+  </p>
+</div>
+    </div>
+    <div id="privacy" class="content-box" style="display:none;">
+      <h3>Privacy Policy</h3>
+
+  <p>
+    We value your trust and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you interact with our Refund Management System.
+  </p>
+
+  <h4>]]>🔐<![CDATA[ Information We Collect</h4>
+  <ul>
+    <li><strong>Personal Details:</strong> Name, Email, Contact Number, Address</li>
+    <li><strong>Order Information:</strong> Order ID, Product Details, Transaction History</li>
+    <li><strong>Refund Requests:</strong> Reason for Return, Supporting Documents (if any)</li>
+    <li><strong>Technical Info:</strong> IP Address, Browser Type, Device Information</li>
+  </ul>
+
+  <h4>]]>📦<![CDATA[ How We Use Your Information</h4>
+  <ul>
+    <li>To process refund and return requests</li>
+    <li>To verify order and payment details</li>
+    <li>To communicate updates or decisions on refund status</li>
+    <li>To improve our system and customer service</li>
+  </ul>
+
+  <h4>]]>🤝<![CDATA[ Data Sharing</h4>
+  <ul>
+    <li>We <strong>do not sell or rent</strong> your personal data to third parties.</li>
+    <li>We may share information with trusted delivery partners or payment gateways strictly for fulfilling services.</li>
+    <li>We comply with legal obligations when data disclosure is required by law enforcement.</li>
+  </ul>
+
+  <h4>]]>🛡<![CDATA[️ Data Security</h4>
+  <p>
+    We implement strong security measures including encryption and access control to protect your data from unauthorized access or misuse.
+  </p>
+
+  <h4>]]>📅<![CDATA[ Data Retention</h4>
+  <p>
+    We retain your refund-related data only for as long as necessary to fulfill the intended purpose or to comply with legal and audit obligations.
+  </p>
+
+  <h4>]]>🧾<![CDATA[ Your Rights</h4>
+  <ul>
+    <li>Access or update your personal data</li>
+    <li>Request deletion of data under applicable laws</li>
+    <li>Raise complaints regarding data misuse</li>
+  </ul>
+
+  <h4>]]>📩<![CDATA[ Contact Us</h4>
+  <p>
+    For any privacy-related concerns or requests, contact our Data Protection Officer at <strong>privacy@yourecommerce.com</strong>.
+  </p>
+
+  
+</div>
+    <div id="track" class="content-box" style="display:none;">
+      
+
+    </div>
+   
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

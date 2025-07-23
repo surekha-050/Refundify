@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "454fc1c791d647d1abb1e44868542439": {
+          "id": "454fc1c791d647d1abb1e44868542439",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "8f71ffbcde7f414ca4f11aad677f010d": {
+          "id": "8f71ffbcde7f414ca4f11aad677f010d",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "e234cf5bb2f442b6be0d58f62017eca9": {
+          "id": "e234cf5bb2f442b6be0d58f62017eca9",
+          "stepType": "TextOutput",
+          "name": "Welcome Message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Hii,"
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user.name}}",
+                        "displayValue": "Input Variables➛User➛Name"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "905edc4c00de4e7a9116b5e59f92e86e"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "d5fc818395c94802afe659009ea2d722": {
+          "name": "User Choice",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How can we help you"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "858a165c307a4a1eae4cd38560c72e4d",
+          "detailDescription": "",
+          "id": "d5fc818395c94802afe659009ea2d722",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "56fc3ee47697483a98690a6cf3b4ed16": {
+          "id": "56fc3ee47697483a98690a6cf3b4ed16",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "de334d80578543fe9a6e891dd69a7286": {
+          "id": "de334d80578543fe9a6e891dd69a7286",
+          "stepType": "LookupRecord",
+          "name": "To check the status",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.order_id}}"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "865253bf99ae4582a3a409549c47ef53"
+        },
+        "a7249b8ea8a1428a85bc8e6c74941376": {
+          "id": "a7249b8ea8a1428a85bc8e6c74941376",
+          "stepType": "TextPrompt",
+          "name": "Order ID",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter your Order Id"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "986785ae320d46258b8d37dfad9cdf7d",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "708cdcbb9cd646049792d4d490daa9be": {
+          "id": "708cdcbb9cd646049792d4d490daa9be",
+          "stepType": "LookupRecord",
+          "name": "To cancel the Request",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.order_id}}^status!=3^ORstatus!=5^ORstatus!=4"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "9a8cb94bf7804105aae75e89faa255a8"
+        },
+        "66ad1f4557504d6ab6cb0d2d066f428a": {
+          "id": "66ad1f4557504d6ab6cb0d2d066f428a",
+          "stepType": "TextOutput",
+          "name": "Show message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your complaint is cancelled successfully"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "a91dd9d834534c36aea6c9afc941ef2e"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "254666127454414dbba99a7e064a1c71": {
+          "id": "254666127454414dbba99a7e064a1c71",
+          "stepType": "RecordOutput",
+          "name": "Show message",
+          "variableId": "865253bf99ae4582a3a409549c47ef53",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "x_1771422_refund_0_refund_details",
+          "fields": [
+            "status"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "c6eb9061f07d4e8b8f8e47eaffe762da": {
+          "id": "c6eb9061f07d4e8b8f8e47eaffe762da",
+          "stepType": "CrudAction",
+          "name": "update the status",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "status",
+                  "expression": "8",
+                  "id": "da94079b927340a1b3d7b0a3ae3af0be"
+                }
+              ]
+            },
+            "queryString": "status=8"
+          },
+          "mode": "update",
+          "record": "9a8cb94bf7804105aae75e89faa255a8",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "813a44c9c9a94b148aba1407734e4e2b"
+        },
+        "767a1427463c47f4a3c84933c7ddc8f7": {
+          "id": "767a1427463c47f4a3c84933c7ddc8f7",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "acd57229b8714898b6ef90f54198ff2a": {
+          "id": "acd57229b8714898b6ef90f54198ff2a",
+          "stepType": "TextOutput",
+          "name": "show message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "No Record Found"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "41a044c8d4724a04a13948f8a9455040"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "c4de0d4abe704be4b84e86bcda538b1b",
+          "edgeType": "Edge",
+          "source": "454fc1c791d647d1abb1e44868542439",
+          "target": "e234cf5bb2f442b6be0d58f62017eca9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2f3cfabbad6742d5ae64afe96d75ad90",
+          "edgeType": "Edge",
+          "source": "e234cf5bb2f442b6be0d58f62017eca9",
+          "target": "d5fc818395c94802afe659009ea2d722",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2a989ab8aee142afb3fccd7e01effe71",
+          "edgeType": "Branch",
+          "source": "56fc3ee47697483a98690a6cf3b4ed16",
+          "target": "de334d80578543fe9a6e891dd69a7286",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.user_choice=check request status",
+            "mode": "query"
+          },
+          "label": "Check Request Status"
+        },
+        {
+          "id": "0b173f076158424180c8cf27a943a2c1",
+          "edgeType": "Edge",
+          "source": "d5fc818395c94802afe659009ea2d722",
+          "target": "a7249b8ea8a1428a85bc8e6c74941376",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "91f4858da3ab40b89d3a4cf44c8ca2a6",
+          "edgeType": "Edge",
+          "source": "a7249b8ea8a1428a85bc8e6c74941376",
+          "target": "56fc3ee47697483a98690a6cf3b4ed16",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b79e0b8d9ddc40e4952360db222d9169",
+          "edgeType": "Branch",
+          "source": "56fc3ee47697483a98690a6cf3b4ed16",
+          "target": "708cdcbb9cd646049792d4d490daa9be",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.user_choice=cancel a request",
+            "mode": "query"
+          },
+          "label": "Cancel the Request"
+        },
+        {
+          "id": "b6a34d1b67f74d168ce19fd597fbb8de",
+          "edgeType": "Edge",
+          "source": "66ad1f4557504d6ab6cb0d2d066f428a",
+          "target": "8f71ffbcde7f414ca4f11aad677f010d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c35df0ef8d3b4de6875b35c36ad34b34",
+          "edgeType": "Edge",
+          "source": "de334d80578543fe9a6e891dd69a7286",
+          "target": "254666127454414dbba99a7e064a1c71",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e9562d9381a3452499386b395e646fa7",
+          "edgeType": "Edge",
+          "source": "254666127454414dbba99a7e064a1c71",
+          "target": "8f71ffbcde7f414ca4f11aad677f010d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c75c6952da854f2cb7960d8d455cc01c",
+          "edgeType": "Edge",
+          "source": "c6eb9061f07d4e8b8f8e47eaffe762da",
+          "target": "66ad1f4557504d6ab6cb0d2d066f428a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "5916f9f92bbb426d82cadf0ac1c06995",
+          "edgeType": "Edge",
+          "source": "708cdcbb9cd646049792d4d490daa9be",
+          "target": "767a1427463c47f4a3c84933c7ddc8f7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a90171f9b46b477cbf486fd875b8f9ae",
+          "edgeType": "Branch",
+          "source": "767a1427463c47f4a3c84933c7ddc8f7",
+          "target": "c6eb9061f07d4e8b8f8e47eaffe762da",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.to_cancel_the_requestISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "Record found"
+        },
+        {
+          "id": "d41f30d5039149769fa7ab1724afda3d",
+          "edgeType": "Branch",
+          "source": "767a1427463c47f4a3c84933c7ddc8f7",
+          "target": "acd57229b8714898b6ef90f54198ff2a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.to_cancel_the_requestISEMPTY",
+            "mode": "query"
+          },
+          "label": "record not found"
+        },
+        {
+          "id": "00cb22f70a0c44d9a135e52476847789",
+          "edgeType": "Edge",
+          "source": "acd57229b8714898b6ef90f54198ff2a",
+          "target": "8f71ffbcde7f414ca4f11aad677f010d",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "858a165c307a4a1eae4cd38560c72e4d": {
+      "id": "858a165c307a4a1eae4cd38560c72e4d",
+      "name": "user_choice",
+      "label": "User Choice",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Cancel a request",
+          "value": "cancel a request"
+        },
+        {
+          "label": "check request status",
+          "value": "check request status"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "d5fc818395c94802afe659009ea2d722",
+      "isHidden": false
+    },
+    "865253bf99ae4582a3a409549c47ef53": {
+      "id": "865253bf99ae4582a3a409549c47ef53",
+      "name": "to_check_the_status",
+      "label": "To Check The Status",
+      "varType": "reference",
+      "table": "x_1771422_refund_0_refund_details",
+      "category": "vaInputs",
+      "nodeId": "254666127454414dbba99a7e064a1c71",
+      "isHidden": false
+    },
+    "986785ae320d46258b8d37dfad9cdf7d": {
+      "id": "986785ae320d46258b8d37dfad9cdf7d",
+      "name": "order_id",
+      "label": "Order ID",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc1MjY0NzgxNDg2NiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "a7249b8ea8a1428a85bc8e6c74941376",
+      "isHidden": false
+    },
+    "9a8cb94bf7804105aae75e89faa255a8": {
+      "id": "9a8cb94bf7804105aae75e89faa255a8",
+      "name": "to_cancel_the_request",
+      "label": "To Cancel The Request",
+      "varType": "reference",
+      "table": "x_1771422_refund_0_refund_details",
+      "category": "vaInputs",
+      "nodeId": "708cdcbb9cd646049792d4d490daa9be",
+      "isHidden": false
+    },
+    "813a44c9c9a94b148aba1407734e4e2b": {
+      "id": "813a44c9c9a94b148aba1407734e4e2b",
+      "name": "update_the_status",
+      "label": "Update The Status",
+      "varType": "reference",
+      "table": "",
+      "inactive": true,
+      "category": "vaInputs",
+      "nodeId": "c6eb9061f07d4e8b8f8e47eaffe762da",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>Refund Management Bot</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Refund Management Bot</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 15:29:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d9226d90833ee6505d2db4b6feaad349</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Refund Management Bot</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_cb_topic_d9226d90833ee6505d2db4b6feaad349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-16 10:46:11</sys_updated_on>
+        <title>Refund Management Bot</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=d9226d90833ee6505d2db4b6feaad349"/>
+</record_update>

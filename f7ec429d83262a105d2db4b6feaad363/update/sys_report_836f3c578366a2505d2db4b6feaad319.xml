@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
         <aggregation_source>no_override</aggregation_source>
@@ -48,7 +48,9 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>sys_created_on</field>
         <field_list>number,order_id,date_of_purchase,reason_for_return,comments,supporting_document0,account_number,ifsc_code,status</field_list>
-        <filter/>
+        <filter table="x_1771422_refund_0_refund_details">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -72,7 +74,7 @@
         <lower_limit/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
-        <no_bulk_migration>false</no_bulk_migration>
+        <no_bulk_migration>true</no_bulk_migration>
         <orderby_list/>
         <other_threshold>-2</other_threshold>
         <others>true</others>
@@ -80,7 +82,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles/>
+        <roles>x_1771422_refund_0.consumer</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -108,25 +110,25 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 10:24:19</sys_created_on>
         <sys_id>836f3c578366a2505d2db4b6feaad319</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Total Refund Requests Created</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>No.Of Requests Per Day</sys_name>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>sys_report_836f3c578366a2505d2db4b6feaad319</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 10:39:01</sys_updated_on>
+        <sys_updated_on>2025-07-18 05:50:13</sys_updated_on>
         <table>x_1771422_refund_0_refund_details</table>
-        <title>Total Refund Requests Created</title>
+        <title>No.Of Requests Per Day</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field/>
-        <type>bar</type>
+        <trend_field>sys_created_on</trend_field>
+        <type>line</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_null_in_trend>false</use_null_in_trend>
-        <user>6816f79cc0a8016401c5a33be04be441</user>
+        <user>GLOBAL</user>
         <x_axis_allow_decimals>true</x_axis_allow_decimals>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>

@@ -2,12 +2,15 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name/>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
-}]]></client_script_v2>
+
+}
+
+]]></client_script_v2>
         <comments/>
-        <condition>current.state == 'In Reviewer approval'</condition>
+        <condition>current.status  == 'in_reviewer_approval'</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -30,16 +33,9 @@
         <name>Cancel</name>
         <onclick>onCancel()</onclick>
         <order>100</order>
-        <script><![CDATA[function onCancelClick() {
-    var allFields = g_form.getEditableFields();
-    for (var i = 0; i < allFields.length; i++) {
-        var fieldName = allFields[i];
-        if (g_form.getControl(fieldName)) {
-            g_form.setValue(fieldName, '');
-        }
-    }
-    window.location.href = '/home.do';
-}]]></script>
+        <script><![CDATA[current.status=8;
+current.update();
+]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -50,7 +46,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>95df5ccf836e22505d2db4b6feaad312</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Cancel</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
@@ -58,7 +54,7 @@
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>sys_ui_action_95df5ccf836e22505d2db4b6feaad312</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-09 13:39:05</sys_updated_on>
+        <sys_updated_on>2025-07-21 06:11:10</sys_updated_on>
         <table>x_1771422_refund_0_refund_details</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

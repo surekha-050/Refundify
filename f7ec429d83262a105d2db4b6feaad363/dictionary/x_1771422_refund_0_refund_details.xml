@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="ffa980ce83e6ea105d2db4b6feaad38f" label="Refund Details" max_length="40" name="x_1771422_refund_0_refund_details" text_index="true" type="collection">
-        <element label="Approver Notes" max_length="4000" name="approver_notes" type="string"/>
+    <element audit="true" db_object_id="ffa980ce83e6ea105d2db4b6feaad38f" label="Refund Details" max_length="40" name="x_1771422_refund_0_refund_details" text_index="true" type="collection">
+        <element label="Approver Notes" max_length="4000" name="approver_notes" read_only="true" type="string"/>
+        <element label="Editable Flag" max_length="40" name="editable_flag" type="boolean"/>
         <element label="Order ID" mandatory="true" max_length="32" name="order_id" reference="x_1771422_refund_0_order_details" type="reference"/>
         <element choice="1" label="Reason for Return" mandatory="true" max_length="40" name="reason_for_return" type="choice">
             <choice>
@@ -16,7 +17,7 @@
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Comments" mandatory="true" max_length="225" name="comments" type="string"/>
         <element label="IFSC Code" max_length="40" name="ifsc_code" type="string"/>
-        <element choice="3" default="1&#10;" label="Status" max_length="40" name="status" type="choice">
+        <element choice="3" default="1" label="Status" max_length="40" name="status" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="In Reviewer Approval" sequence="1" value="in_reviewer_approval"/>
                 <element inactive_on_update="false" label="Send Back" sequence="5" value="6"/>
@@ -30,7 +31,7 @@
         </element>
         <element label="Account Number" max_length="225" name="account_number" type="string"/>
         <element label="Supporting Documents" max_length="40" name="supporting_document0" type="file_attachment"/>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Customer ID" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Customer ID" max_length="40" name="number" read_only="true" type="string"/>
         <index name="index">
             <element name="sys_class_name"/>
         </index>

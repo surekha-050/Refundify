@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:d9226d90833ee6505d2db4b6feaad349:node:bac4e28b1e47494aa5ec48fc286a4ad1:field:0</key>
+        <language>en</language>
+        <message>The current status is  not In Reviewer Approval,so it can't be cancelled</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-16 06:58:50</sys_created_on>
+        <sys_id>37e9c7c183faa2105d2db4b6feaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>va:topic:d9226d90833ee6505d2db4b6feaad349:node:bac4e28b1e47494aa5ec48fc286a4ad1:field:0</sys_name>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sys_ui_message_37e9c7c183faa2105d2db4b6feaad3b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-16 06:58:50</sys_updated_on>
+    </sys_ui_message>
+</record_update>

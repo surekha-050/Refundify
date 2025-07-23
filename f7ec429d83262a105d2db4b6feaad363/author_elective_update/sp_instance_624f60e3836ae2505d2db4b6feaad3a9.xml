@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">dfd5946383e6e2505d2db4b6feaad3bd</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 03:52:19</sys_created_on>
+        <sys_id>624f60e3836ae2505d2db4b6feaad3a9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_update_name>sp_instance_624f60e3836ae2505d2db4b6feaad3a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 03:55:36</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"href": {
+		"value": "https://dev279350.service-now.com/now/nav/ui/classic/params/target/x_1771422_refund_0_order_details_list.do%3Fsysparm_userpref_module%3Dd278250683eeea105d2db4b6feaad389",
+		"displayValue": "https://dev279350.service-now.com/now/nav/ui/classic/params/target/x_1771422_refund_0_order_details_list.do%3Fsysparm_userpref_module%3Dd278250683eeea105d2db4b6feaad389"
+	},
+	"button_text": {
+		"value": "click here to see order details",
+		"displayValue": "click here to see order details"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=624f60e3836ae2505d2db4b6feaad3a9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</application>
+        <file_path/>
+        <instance_id>5a798ecfeb234ad056eafddacad0cd2d</instance_id>
+        <instance_name>dev279350</instance_name>
+        <name>sp_instance_624f60e3836ae2505d2db4b6feaad3a9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="3"&gt;dfd5946383e6e2505d2db4b6feaad3bd&lt;/sp_column&gt;&lt;sp_widget display_value="link-button"&gt;abc50de6d702120023c84f80de61036a&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-11 03:52:19&lt;/sys_created_on&gt;&lt;sys_id&gt;624f60e3836ae2505d2db4b6feaad3a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Refundify" source="x_1771422_refund_0"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Refundify"&gt;f7ec429d83262a105d2db4b6feaad363&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_624f60e3836ae2505d2db4b6feaad3a9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-11 03:55:36&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"href": {
+		"value": "https://dev279350.service-now.com/now/nav/ui/classic/params/target/x_1771422_refund_0_order_details_list.do%3Fsysparm_userpref_module%3Dd278250683eeea105d2db4b6feaad389",
+		"displayValue": "https://dev279350.service-now.com/now/nav/ui/classic/params/target/x_1771422_refund_0_order_details_list.do%3Fsysparm_userpref_module%3Dd278250683eeea105d2db4b6feaad389"
+	},
+	"button_text": {
+		"value": "click here to see order details",
+		"displayValue": "click here to see order details"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=624f60e3836ae2505d2db4b6feaad3a9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1734971649</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>fad0c7538322e2505d2db4b6feaad371</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 03:55:36</sys_created_on>
+        <sys_id>2200f027836ae2505d2db4b6feaad386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f79fd3610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 03:55:36</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>a600f027ed6ae25044e8106306d80c85</update_guid>
+        <update_guid_history>a600f027ed6ae25044e8106306d80c85:-1734971649,a57fe4636a6ae250b944ee5a91a50e86:349239009,a24fa0e3456ae2502a006633f3c66227:1488908543</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">64be81af83eae2505d2db4b6feaad3d9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 06:09:31</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>0965fa57332f4eff8c0a0ab49f8bda89</sys_id>
+        <sys_metadata>624f60e3836ae2505d2db4b6feaad3a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
+        <sys_scope_delete display_value="">a369cc8238a54ac09d526d2d3f514064</sys_scope_delete>
+        <sys_update_name>sp_instance_624f60e3836ae2505d2db4b6feaad3a9</sys_update_name>
+        <sys_update_version display_value="sp_instance_624f60e3836ae2505d2db4b6feaad3a9">2200f027836ae2505d2db4b6feaad386</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 06:09:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

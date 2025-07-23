@@ -3,7 +3,9 @@
         <active>true</active>
         <category display_value="Approval">76559d5783e6a2505d2db4b6feaad3d8</category>
         <columns>state,approver,comments,sysapproval,sys_created_on</columns>
-        <condition/>
+        <condition table="sysapproval_approver">approverDYNAMIC90d1921e5f510100a9ad2572f2b477fe^source_table=x_1771422_refund_0_refund_details<item endquery="false" field="approver" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="x_1771422_refund_0_refund_details"/>
+        </condition>
         <configuration display_value="Refundify_menu_config">a6559d5783e6a2505d2db4b6feaad3c1</configuration>
         <group_by_column/>
         <groups/>
@@ -60,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a559d5783e6a2505d2db4b6feaad3da</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>All</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
@@ -68,7 +70,7 @@
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>sys_ux_list_3a559d5783e6a2505d2db4b6feaad3da</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 12:00:08</sys_updated_on>
+        <sys_updated_on>2025-07-11 07:33:16</sys_updated_on>
         <table>sysapproval_approver</table>
         <title>All</title>
         <view/>

@@ -47,13 +47,13 @@
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups name="Receiver Team">630f8fe283a2ee105d2db4b6feaad347</recipient_groups>
+        <recipient_groups name="Reviewer Team">630f8fe283a2ee105d2db4b6feaad347</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Ticket raised by consumer so send msg to reviewer</subject>
+        <subject>Ticket raised by consumer ,Kindly Verify it and take necessary action</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -61,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>66aedbf6832a22505d2db4b6feaad3e1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>send msg to receiver</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refundify" source="x_1771422_refund_0">f7ec429d83262a105d2db4b6feaad363</sys_package>
@@ -69,7 +69,7 @@
         <sys_scope display_value="Refundify">f7ec429d83262a105d2db4b6feaad363</sys_scope>
         <sys_update_name>sysevent_email_action_66aedbf6832a22505d2db4b6feaad3e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 05:27:08</sys_updated_on>
+        <sys_updated_on>2025-07-18 07:10:32</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

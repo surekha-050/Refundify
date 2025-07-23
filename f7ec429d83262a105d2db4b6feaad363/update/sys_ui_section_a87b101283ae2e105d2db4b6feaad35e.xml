@@ -4,41 +4,55 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 05:13:14</sys_created_on>
-            <sys_id>b87b101283ae2e105d2db4b6feaad3a9</sys_id>
+            <sys_created_on>2025-07-18 03:46:03</sys_created_on>
+            <sys_id>dbf070bd837e66105d2db4b6feaad3bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Order Details" display_value="Order Details" name="x_1771422_refund_0_order_details" sys_domain="global" view="Default view">a87b101283ae2e105d2db4b6feaad35e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 05:13:14</sys_updated_on>
+            <sys_updated_on>2025-07-18 03:46:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product_category</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-18 03:46:03</sys_created_on>
+            <sys_id>1bf070bd837e66105d2db4b6feaad3c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Order Details" display_value="Order Details" name="x_1771422_refund_0_order_details" sys_domain="global" view="Default view">a87b101283ae2e105d2db4b6feaad35e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-18 03:46:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 05:13:14</sys_created_on>
-            <sys_id>b07b101283ae2e105d2db4b6feaad3aa</sys_id>
+            <sys_created_on>2025-07-18 03:46:03</sys_created_on>
+            <sys_id>13f070bd837e66105d2db4b6feaad3c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Order Details" display_value="Order Details" name="x_1771422_refund_0_order_details" sys_domain="global" view="Default view">a87b101283ae2e105d2db4b6feaad35e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 05:13:14</sys_updated_on>
+            <sys_updated_on>2025-07-18 03:46:03</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>date_of_purchase</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 05:13:14</sys_created_on>
-            <sys_id>b87b101283ae2e105d2db4b6feaad3aa</sys_id>
+            <sys_created_on>2025-07-18 03:46:03</sys_created_on>
+            <sys_id>1bf070bd837e66105d2db4b6feaad3c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Order Details" display_value="Order Details" name="x_1771422_refund_0_order_details" sys_domain="global" view="Default view">a87b101283ae2e105d2db4b6feaad35e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 05:13:14</sys_updated_on>
+            <sys_updated_on>2025-07-18 03:46:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
